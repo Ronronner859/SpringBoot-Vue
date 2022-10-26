@@ -9,8 +9,10 @@
 
 2.Vue提供了MVVM风格的双向数据绑定，核心是MVVM中的VM，也就是ViewModel，ViewModel负责连接View和Model，保证视图和数据的一致性。
 
-![]()
+![](https://github.com/Ronronner859/Resources-at-the-University/blob/main/%E5%A4%A7%E4%B8%89/Snipaste_2022-10-26_11-54-13.png)
 
 编程工具：vscode / WebStorm
  
 依赖管理：NPM
+
+开源项目：github/gitee开源项目开发者搜索即可
