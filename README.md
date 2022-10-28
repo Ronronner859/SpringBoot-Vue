@@ -1,5 +1,5 @@
 # SpringBoot-Vue
-前端vue+后端mysql+阿里云部署
+前端vue+后端SpringBoot+阿里云部署
 
 前后端分离，后端提供一些接口，前端来调用这些接口
 
