@@ -1,4 +1,4 @@
-# myvue-练手的vue-cil
+# myvue-练手的vue-cli
 
 > A Vue.js project
 
