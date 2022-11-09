@@ -43,3 +43,4 @@ export async function editApi(parm){
 export async function deleteApi(parm){
   return await http.delete("/api/user",parm)
 }
+

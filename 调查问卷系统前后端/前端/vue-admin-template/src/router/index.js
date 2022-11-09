@@ -70,6 +70,19 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/bill',
+    component: Layout,
+    name: 'bill',
+    alwaysShow: true,
+    meta: { title: '计费管理', icon: 'el-icon-s-goods' },
+    children: [{
+      path: '/BillList',
+      name: 'BillList',
+      component: () => import('@/views/bill/BillList'),
+      meta: { title: '计费管理', icon: 'table' }
+    }]
+  },
+  {
     path: '/question',
     component: Layout,
     name: 'question',

@@ -14,15 +14,15 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
-//清空表单
+// 清空表单
 import resetForm from '@/utils/resetForm'
-Vue.prototype.$resetForm = resetForm;
-//信息提示
+Vue.prototype.$resetForm = resetForm
+// 信息提示
 import myconfirm from '@/utils/myconfirm'
-Vue.prototype.$myconfirm = myconfirm;
-//对象的快速复制
+Vue.prototype.$myconfirm = myconfirm
+// 对象的快速复制
 import objCoppy from '@/utils/objCoppy'
-Vue.prototype.$objCoppy = objCoppy;
+Vue.prototype.$objCoppy = objCoppy
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

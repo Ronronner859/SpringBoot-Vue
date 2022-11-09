@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 50723
  Source Host           : localhost:3306
- Source Schema         : question-projects
+ Source Schema         : question-project
 
  Target Server Type    : MySQL
  Target Server Version : 50723
@@ -356,5 +356,8 @@ CREATE TABLE `sys_user`  (
 -- Records of sys_user
 -- ----------------------------
 INSERT INTO `sys_user` VALUES (2, 'admin', '111111', '18687116223', '3501754007@qq.com');
+INSERT INTO `sys_user` VALUES (3, 'lcy', '123', '18787171906', '123@qq.com');
+INSERT INTO `sys_user` VALUES (4, 'zsfzsf', '1234', '18687445663', '123@qq.com');
+INSERT INTO `sys_user` VALUES (5, 'lcy1', 'lcy1', '18787195630', '123@qq.com');
 
 SET FOREIGN_KEY_CHECKS = 1;

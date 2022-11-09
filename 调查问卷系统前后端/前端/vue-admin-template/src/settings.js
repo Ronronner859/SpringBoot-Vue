@@ -13,7 +13,7 @@ module.exports = {
    * @description Whether show the logo in sidebar
    */
   sidebarLogo: true,
-  
+
   baseUrl: 'http://localhost:8089',
   /**
    * 图片上传路径

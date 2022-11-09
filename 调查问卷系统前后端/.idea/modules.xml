@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/后端/question-project/question-admin/question-admin.iml" filepath="$PROJECT_DIR$/后端/question-project/question-admin/question-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/后端/question-project/question-common/question-common.iml" filepath="$PROJECT_DIR$/后端/question-project/question-common/question-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/后端/question-project/question-project.iml" filepath="$PROJECT_DIR$/后端/question-project/question-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/调查问卷系统前后端.iml" filepath="$PROJECT_DIR$/.idea/调查问卷系统前后端.iml" />
+    </modules>
+  </component>
+</project>
