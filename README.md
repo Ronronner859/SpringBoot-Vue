@@ -32,7 +32,7 @@
 ## vue框架
 ### 基础介绍
 Vue是一套构建用户界面的渐进式框架 （学习基础：html/css/js）
-[Vue文档](https://cn.vuejs.org/guide/introduction.html)
+[Vue文档查阅](https://cn.vuejs.org/guide/introduction.html)
 
 1.vue.js提供了mvvm数据绑定（model-view-viewmodel）,MVVM是Model-View-ViewModel的缩写，它是一种基于前端开发的架构模式，其核心是提供对View和ViewModel的双向数据绑定。
 
