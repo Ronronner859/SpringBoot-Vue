@@ -40,23 +40,25 @@ size 表单的大小
             type="primary"
             size="small"
             @click="editBtn(scope.row)"
-            >编辑</el-button
+          >编辑
+          </el-button
           >
           <el-button
             icon="el-icon-delete"
             type="danger"
             size="small"
             @click="deleteBtn(scope.row)"
-            >删除</el-button
+          >删除
+          </el-button
           >
         </template>
       </el-table-column>
     </el-table>
-    <!-- 分页 
+    <!-- 分页
     @size-change 页容量改变时触发的事件
     @current-change 页数改变时触发的事件
-    :current-page  当前第几页 
-    :page-sizes 
+    :current-page  当前第几页
+    :page-sizes
     :page-size  没有查询几条
      :total 总条数
     -->
@@ -109,34 +111,35 @@ size 表单的大小
 </template>
 
 <script>
-import SysDialog from "@/components/system/SysDialog.vue";
-import { addApi, getListApi,editApi ,deleteApi} from "@/api/user";
+import SysDialog from '@/components/system/SysDialog.vue'
+import {addApi, getListApi, editApi, deleteApi} from '@/api/user'
+
 export default {
-  //注册组件
+  // 注册组件
   components: { SysDialog },
-  //在页面需要展示的数据，都需要在data里面显示的定义
+  // 在页面需要展示的数据，都需要在data里面显示的定义
   data() {
     return {
-      //表格高度
+      // 表格高度
       tableHeight: 0,
-      //表格的数据
+      // 表格的数据
       tableList: [],
 
-      //新增表单的验证规则
+      // 新增表单的验证规则
       rules: {
         phone: [
           {
-            trigger: "change",
-            message: "请填写电话",
+            trigger: 'change',
+            message: '请填写电话',
             required: true,
           },
         ],
         email: [
           {
-            trigger: "change",
-            message: "请填写邮箱",
-            required: true,
-          },
+            trigger: 'change',
+            message: '请填写邮箱',
+            required: true
+          }
         ],
         username: [
           {
@@ -187,11 +190,11 @@ export default {
   },
   methods: {
     //搜索按钮
-    searchBtn(){
+    searchBtn() {
       this.getList();
     },
     //重置按钮
-    resetBtn(){
+    resetBtn() {
       this.parms.username = '';
       this.getList();
     },
@@ -215,9 +218,9 @@ export default {
       //信息确认提示
       let confirm = await this.$myconfirm('确定删除该数据吗?')
       console.log(confirm)
-      if(confirm){
-        let res = await deleteApi({userId:row.userId})
-        if(res && res.code == 200){
+      if (confirm) {
+        let res = await deleteApi({userId: row.userId})
+        if (res && res.code == 200) {
           //信息提示
           this.$message.success(res.msg)
           //刷新表格
@@ -229,13 +232,13 @@ export default {
     editBtn(row) {
       console.log(row);
       //表单的清空
-      this.$resetForm('addForm',this.addModel)
+      this.$resetForm('addForm', this.addModel)
       //设置弹框属性
       this.addDialog.title = '编辑用户'
       this.addDialog.visible = true;
       //设置要编辑的数据回显
       //把当前要编辑的数据设置到表单绑定的数据域
-      this.$objCoppy(row,this.addModel)
+      this.$objCoppy(row, this.addModel)
       console.log(this.addModel)
       //设置为编辑
       this.addModel.editType = '1'; //1:标识编辑
@@ -254,7 +257,7 @@ export default {
     //新增按钮
     addBtn() {
       //表单的清空
-      this.$resetForm('addForm',this.addModel)
+      this.$resetForm('addForm', this.addModel)
       //设置是新增还是编辑
       this.addModel.editType = "0";
       this.addDialog.title = "新增用户";
@@ -270,7 +273,7 @@ export default {
           if (this.addModel.editType == "0") {
             //新增
             res = await addApi(this.addModel);
-          }else{
+          } else {
             res = await editApi(this.addModel)
           }
           console.log(res);
