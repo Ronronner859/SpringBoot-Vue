@@ -7,6 +7,11 @@ import Vue from 'vue'
 //引入app组件 讲把APP.vue中的模板构造 渲染到HTML页面中
 import App from './App'
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
+
 import router from './router'
 
 Vue.config.productionTip = false
